@@ -46,31 +46,41 @@
                 <div class="FilasContacto">
                     <!-- Nombre -->
                     <div class="Formulario">
-                        <label for="Nombre">Nombre</label>
-                        <input type="text" id="Nombre" name="Nombre" placeholder="Jose">
+                        <label for="Nombre">
+                            <span>Nombre</span>
+                            <input type="text" autocomplete="off" id="Nombre" name="Nombre">
+                        </label>
                     </div>
                     <!-- Apellido -->
                     <div class="Formulario">
-                        <label for="Apellido">Apellido</label>
-                        <input type="text" id="Apellido" name="Apellido" placeholder="Perez">
+                        <label for="Apellido">
+                            <span>Apellido</span>
+                            <input type="text" autocomplete="off" id="Apellido" name="Apellido">
+                        </label>
                     </div>
                 </div>
                 <div class="FilasContacto">
                     <!-- e-mail -->
                     <div class="Formulario">
-                        <label for="CorreoElectronico">E-mail</label>
-                        <input type="email" id="CorreoElectronico" name="CorreoElectronico" placeholder="tunombre@tucorreo.com">
+                        <label for="CorreoElectronico">
+                            <span>E-mail</span>
+                            <input type="email" autocomplete="off" id="CorreoElectronico" name="CorreoElectronico">
+                        </label>
                     </div>
                     <!-- telefono -->
                     <div class="Formulario">
-                    <label for="telefono">Tel celular</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="+541234567890">
+                        <label for="telefono">
+                            <span>Tel celular</span>
+                            <input type="tel"  autocomplete="off" id="telefono" name="telefono">
+                        </label>
                     </div>
                 </div>
                 <!-- comentario -->
                 <div class="Formulario">
-                    <label for="comentario">Comentario</label>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribe un comentario"></textarea>
+                    <label for="comentario">
+                        <span>Escribi un comentario</span>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                    </label>
                 </div>
                 <!-- boton enviar -->
                 <div class="Enviar">
@@ -105,5 +115,6 @@
             <p>2022</p>
         </div>
     </footer>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
