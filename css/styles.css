@@ -333,3 +333,39 @@ label span.top{
     background: rgb(217, 217, 217);
     padding: 0 10px;
 }
+
+/* FOOTER */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.RrssFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.RrssFooter a svg{
+    color: rgb(17, 40, 72);
+    height: 3rem;
+    margin: 10px 10px;
+}
+.Copyright{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+.Copyright svg{
+    color: rgb(17, 40, 72);
+    height: 3rem;
+}
+.Copyright p{
+    font-family: 'Chakra Petch', sans-serif;
+    color: rgb(17, 40, 72);
+    text-align: center;
+    margin-right: 10px;
+}
