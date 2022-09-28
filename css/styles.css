@@ -14,6 +14,9 @@ h2{
     justify-content: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    text-shadow: 1px 1px 1px gray;
+    animation-name: h1;
+    animation-duration: 2s;
 }
 main{
     background-color: rgb(217, 217, 217);
@@ -32,10 +35,12 @@ header{
     z-index: 1;
 }
 .Logo{
-    width: 8rem;
+    width: 10%;
+    transition: 1s;
+    filter: drop-shadow(5px 5px 2px gray);
 }
 .Logo:hover{
-    transform:scale(1.1);
+    transform:rotate(-10deg);
 }
 nav{
     width: 100%;
@@ -54,11 +59,12 @@ nav{
 }
 .NavBar li a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(17, 40, 72);
 }
 .NavBar li:hover{
+    transition: 1s;
     transform: scale(1.1);
-    text-shadow: 0.5px 0.5px 0.5px #000;
+    text-decoration: solid #000;
 }
 
 /* MAIN INDEX */
@@ -76,14 +82,36 @@ nav{
     grid-area: ImagenPersonaPc;
     display: flex;
     justify-content: center;
+    filter: drop-shadow(5px 5px 2px gray);
+    animation-name: ImagenPersonaPc;
+    animation-duration: 2s;
+}
+@keyframes ImagenPersonaPc {
+    0%{opacity: 0%;transform: translate(0px, 100px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
 }
 .LogoL{
     grid-area: LogoL;
     display: flex;
     justify-content: start;
     align-items: baseline;
-    /* margin-left: 40px; */
     margin-top: 40px;
+    animation-name: LogoL;
+    animation-duration: 2s;
+}
+@keyframes LogoL {
+    0%{opacity: 0%;transform: translate(100px, 0px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+.LogoL img{
+    filter: drop-shadow(5px 5px 2px rgb(98, 98, 98));
+    width: 25%;
 }
 .LogoR{
     grid-area: LogoR;
@@ -91,48 +119,58 @@ nav{
     justify-content: end;
     align-items: baseline;
     margin-right: 40px;
-
+    animation-name: LogoR;
+    animation-duration: 2s;
+}
+@keyframes LogoR {
+    0%{opacity: 0%;transform: translate(100px, 0px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+.LogoR img{
+    filter: drop-shadow(5px 5px 2px rgb(17, 40, 72));
+    width: 25%;
 }
 .LogoL p{
     font-family: 'Audiowide', cursive;
     font-size: 8rem;
     color: #16A1E4;
+    filter: drop-shadow(5px 5px 2px rgb(17, 40, 72));
 }
 .LogoR p{
     font-family: 'Audiowide', cursive;
     font-size: 8rem;
     color: rgb(17, 40, 72);
+    filter: drop-shadow(5px 5px 2px rgb(98, 98, 98));
 }
 .DesWeb{
     grid-area: DesWeb;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+}
+.DesWeb a{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px gray;
+    transition: 1s;
+    text-decoration: none;
+    background-color: rgb(17, 40, 72);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-shadow: 2px 2px 2px gray;
+}
+.DesWeb a:hover{
+    transform: scale(1.1);
 }
 .DesWeb p{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 5rem;
     margin: 20px;
-}
-.DesWeb a{
-    grid-area: BotonContacto;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 2.5rem;
-    color: rgb(255, 255, 255);
-}
-.DesWeb a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: rgb(17, 40, 72);
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-}
-.LogoL img, .LogoR img{
-    width: 18rem;
+    text-shadow: 2px 2px 2px gray;
 }
 
 /* MAIN SOBRE MI */
@@ -150,17 +188,37 @@ nav{
     grid-area: ImagenPersonaCafe;
     display:flex;
     justify-content: center;
-    align-items: center;
+    filter: drop-shadow(5px 5px 2px gray);
+    animation-name: SobreMi;
+    animation-duration: 2s;
 }
+@keyframes SobreMi {
+    0%{opacity: 0%;transform: translate(0px, 100px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+
 h1{
     grid-area: h1;
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
     color: rgb(22,159,228);
     display: flex;
     justify-items: flex-start;
     align-items: flex-end;
     margin-bottom: 5rem;
+    text-shadow: 1px 1px 1px gray;
+    animation-name: h1;
+    animation-duration: 2s;
+}
+@keyframes h1 {
+    0%{opacity: 0%;}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
 }
 .Parrafo{
     grid-area: Parrafo;
@@ -169,22 +227,37 @@ h1{
     text-align: left;
     line-height: 3rem;
     margin-right: 1rem;
+    text-shadow: 1px 1px 1px gray;
+    animation-name: Parrafo;
+    animation-duration: 2s;
+}
+@keyframes Parrafo {
+    0%{opacity: 0%;}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
 }
 .DescargaCv{
     grid-area: DescargaCv;
     display: flex;
     justify-content: center;
     align-items: start;
+}
+.DescargaCv a{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 2.5rem;
     color: rgb(255, 255, 255);
-}
-.DescargaCv a{
+    box-shadow: 2px 1px 3px gray;
+    transition: 1s;
     text-decoration: none;
-    color: rgb(255, 255, 255);
     background-color: rgb(17, 40, 72);
     padding: 1rem 2rem;
     border-radius: 1rem;
+    text-shadow: 2px 2px 2px gray;
+}
+.DescargaCv a:hover{
+    transform: scale(1.1);
 }
 
 /* MAIN SKILLS */
@@ -192,9 +265,31 @@ h1{
     display: flex;
     padding-bottom: 6rem;
 }
-.FilaSkilsIzquierda, .FilaSkillsDerecha{
+.FilaSkillsIzquierda, .FilaSkillsDerecha{
     width: 50%;
     display: flex;
+}
+.FilaSkillsDerecha{
+    animation-name: LogoR;
+    animation-duration: 2s;
+}
+@keyframes LogoR {
+    0%{opacity: 0%;transform: translate(100px, 0px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+.FilaSkillsIzquierda{
+    animation-name: fila;
+    animation-duration: 2s;
+}
+@keyframes fila{
+    0%{opacity: 0%;transform: translate(-100px, 0px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;transform: scale(1.2);}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
 }
 .FilaIzquierdaImagen img, .FilaDerechaImagen img{
     height: 10rem;
@@ -218,6 +313,15 @@ h3{
 /* MAIN PORTFOLIO */
 .FilaPortfolio{
     display: flex;
+    animation-name: Portfolio;
+    animation-duration: 2s;
+}
+@keyframes Portfolio {
+    0%{opacity: 0%;transform: translate(0px, 100px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
 }
 .BoxFilaPortfolio a{
     text-decoration: none;
@@ -263,10 +367,16 @@ h3{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 2.5rem;
     color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px gray;
+    transition: 1s;
     background-color: rgb(17, 40, 72);
     padding: 1rem 2rem;
     border-radius: 1rem;
+    text-shadow: 2px 2px 2px gray;
     margin: 20px 0;
+}
+.ENVIAR input:hover{
+    transform: scale(1.1);
 }
 /* ESTADO REPOSO */
 label{
@@ -281,15 +391,7 @@ label{
     margin: 5px 20px;
 }
 #LabelComentario{
-    display: block;
     width: 440px;
-    border: 2px solid silver;
-    padding: 8px 10px;
-    position: relative;
-    box-sizing: border-box;
-    border-radius: 4px;
-    transition: .25s;
-    
 }
 label input{
     display: block;
@@ -369,3 +471,8 @@ footer{
     text-align: center;
     margin-right: 10px;
 }
+.RrssFooter a:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+@media ()
