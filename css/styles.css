@@ -29,10 +29,7 @@ header{
     background-color: rgb(255, 255, 255);
     align-items: center;
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
-    z-index: 100px;
-}
-.Header{
-    z-index: 100rem;
+    z-index: 1;
 }
 .Logo{
     width: 8rem;
@@ -68,49 +65,58 @@ nav{
 .MainIndex{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "ImagenPersonaPc ImagenPersonaPc LogoL LogoL LogoL"
+    "ImagenPersonaPc ImagenPersonaPc LogoR LogoR LogoR"
+    "ImagenPersonaPc ImagenPersonaPc DesWeb DesWeb DesWeb"
+    ;
 }
 .ImagenPersonaPc{
-    grid-column: 1 / 2;
-    grid-row: 1 / 5;
+    grid-area: ImagenPersonaPc;
+    display: flex;
+    justify-content: center;
 }
 .LogoL{
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
+    grid-area: LogoL;
     display: flex;
+    justify-content: start;
+    align-items: baseline;
+    /* margin-left: 40px; */
+    margin-top: 40px;
+}
+.LogoR{
+    grid-area: LogoR;
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    margin-right: 40px;
+
 }
 .LogoL p{
     font-family: 'Audiowide', cursive;
-    font-size: 6rem;
+    font-size: 8rem;
+    color: #16A1E4;
 }
 .LogoR p{
     font-family: 'Audiowide', cursive;
-    font-size: 6rem;
-}
-
-.LogoR{
-    grid-column: 3 / 5;
-    grid-row: 2 / 3;
-    display: flex;
-}
-.ParrafoApellido{
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
+    font-size: 8rem;
+    color: rgb(17, 40, 72);
 }
 .DesWeb{
-    grid-column: 3 / 6;
-    grid-row: 3 / 4;
+    grid-area: DesWeb;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 .DesWeb p{
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
+    margin: 20px;
 }
-.BotonContacto{
-    grid-column: 4 / 5;
-    grid-row: 4 / 5;
+.DesWeb a{
+    grid-area: BotonContacto;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -118,7 +124,7 @@ nav{
     font-size: 2.5rem;
     color: rgb(255, 255, 255);
 }
-.BotonContacto a{
+.DesWeb a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: rgb(17, 40, 72);
@@ -126,7 +132,7 @@ nav{
     border-radius: 1rem;
 }
 .LogoL img, .LogoR img{
-    width: 20rem;
+    width: 18rem;
 }
 
 /* MAIN SOBRE MI */
@@ -141,7 +147,6 @@ nav{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
 }
 h1{
     grid-column: 3 / 5;
