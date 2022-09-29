@@ -9,17 +9,20 @@ html{
 h2{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 5rem;
-    color: rgb(22,159,228);
+    color: #169fe4;
     display: flex;
     justify-content: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    text-shadow: 1px 1px 1px gray;
-    animation-name: h1;
+    text-shadow: 1px 1px 1px #808080;
+    animation-name: Titulos;
     animation-duration: 2s;
 }
-main{
-    background-color: rgb(217, 217, 217);
+body{
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* HEADER */
@@ -28,16 +31,16 @@ header{
     top: 0;
     display: flex;
     width: 100%;
-    padding: 0.5rem;
-    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    background-color: #ffffff;
     align-items: center;
-    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 0 15px #00000033;
     z-index: 1;
 }
 .Logo{
     width: 10%;
     transition: 1s;
-    filter: drop-shadow(5px 5px 2px gray);
+    filter: drop-shadow(5px 5px 2px #808080);
 }
 .Logo:hover{
     transform:rotate(-10deg);
@@ -47,11 +50,10 @@ nav{
 }
 .NavBar{
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
     column-gap: 4rem;
     font-size: 1.6rem;
-    margin-right: 2rem;
+    margin-right: 20px;
     font-family: 'Chakra Petch', sans-serif;
 }
 .NavBar li{
@@ -59,7 +61,7 @@ nav{
 }
 .NavBar li a{
     text-decoration: none;
-    color: rgb(17, 40, 72);
+    color: #112848;
 }
 .NavBar li:hover{
     transition: 1s;
@@ -82,16 +84,9 @@ nav{
     grid-area: ImagenPersonaPc;
     display: flex;
     justify-content: center;
-    filter: drop-shadow(5px 5px 2px gray);
-    animation-name: ImagenPersonaPc;
+    filter: drop-shadow(5px 5px 2px #808080);
+    animation-name: Imagenes;
     animation-duration: 2s;
-}
-@keyframes ImagenPersonaPc {
-    0%{opacity: 0%;transform: translate(0px, 100px);}
-    25%{opacity: 25%;}
-    50%{opacity: 50%;}
-    75%{opacity: 75%;}
-    100%{opacity: 100%;}
 }
 .LogoL{
     grid-area: LogoL;
@@ -99,18 +94,11 @@ nav{
     justify-content: start;
     align-items: baseline;
     margin-top: 40px;
-    animation-name: LogoL;
+    animation-name: Logos;
     animation-duration: 2s;
 }
-@keyframes LogoL {
-    0%{opacity: 0%;transform: translate(100px, 0px);}
-    25%{opacity: 25%;}
-    50%{opacity: 50%;}
-    75%{opacity: 75%;}
-    100%{opacity: 100%;}
-}
 .LogoL img{
-    filter: drop-shadow(5px 5px 2px rgb(98, 98, 98));
+    filter: drop-shadow(5px 5px 2px #626262);
     width: 25%;
 }
 .LogoR{
@@ -119,31 +107,24 @@ nav{
     justify-content: end;
     align-items: baseline;
     margin-right: 40px;
-    animation-name: LogoR;
+    animation-name: Logos;
     animation-duration: 2s;
 }
-@keyframes LogoR {
-    0%{opacity: 0%;transform: translate(100px, 0px);}
-    25%{opacity: 25%;}
-    50%{opacity: 50%;}
-    75%{opacity: 75%;}
-    100%{opacity: 100%;}
-}
 .LogoR img{
-    filter: drop-shadow(5px 5px 2px rgb(17, 40, 72));
+    filter: drop-shadow(5px 5px 2px #112848);
     width: 25%;
 }
 .LogoL p{
     font-family: 'Audiowide', cursive;
     font-size: 8rem;
     color: #16A1E4;
-    filter: drop-shadow(5px 5px 2px rgb(17, 40, 72));
+    filter: drop-shadow(5px 5px 2px #112848);
 }
 .LogoR p{
     font-family: 'Audiowide', cursive;
     font-size: 8rem;
-    color: rgb(17, 40, 72);
-    filter: drop-shadow(5px 5px 2px rgb(98, 98, 98));
+    color: #112848;
+    filter: drop-shadow(5px 5px 2px #626262);
 }
 .DesWeb{
     grid-area: DesWeb;
@@ -154,14 +135,14 @@ nav{
 .DesWeb a{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 2.5rem;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     box-shadow: 2px 2px 3px gray;
     transition: 1s;
     text-decoration: none;
-    background-color: rgb(17, 40, 72);
+    background-color: #112848;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    text-shadow: 2px 2px 2px gray;
+    text-shadow: 2px 2px 2px #808080;
 }
 .DesWeb a:hover{
     transform: scale(1.1);
@@ -170,7 +151,7 @@ nav{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 5rem;
     margin: 20px;
-    text-shadow: 2px 2px 2px gray;
+    text-shadow: 2px 2px 2px #808080;
 }
 
 /* MAIN SOBRE MI */
@@ -188,37 +169,22 @@ nav{
     grid-area: ImagenPersonaCafe;
     display:flex;
     justify-content: center;
-    filter: drop-shadow(5px 5px 2px gray);
-    animation-name: SobreMi;
+    filter: drop-shadow(5px 5px 2px #808080);
+    animation-name: Imagenes;
     animation-duration: 2s;
 }
-@keyframes SobreMi {
-    0%{opacity: 0%;transform: translate(0px, 100px);}
-    25%{opacity: 25%;}
-    50%{opacity: 50%;}
-    75%{opacity: 75%;}
-    100%{opacity: 100%;}
-}
-
 h1{
     grid-area: h1;
     font-family: 'Chakra Petch', sans-serif;
     font-size: 5rem;
-    color: rgb(22,159,228);
+    color: #169fe4;
     display: flex;
     justify-items: flex-start;
     align-items: flex-end;
     margin-bottom: 5rem;
-    text-shadow: 1px 1px 1px gray;
-    animation-name: h1;
+    text-shadow: 1px 1px 1px #808080;
+    animation-name: Titulos;
     animation-duration: 2s;
-}
-@keyframes h1 {
-    0%{opacity: 0%;}
-    25%{opacity: 25%;}
-    50%{opacity: 50%;}
-    75%{opacity: 75%;}
-    100%{opacity: 100%;}
 }
 .Parrafo{
     grid-area: Parrafo;
@@ -228,15 +194,8 @@ h1{
     line-height: 3rem;
     margin-right: 1rem;
     text-shadow: 1px 1px 1px gray;
-    animation-name: Parrafo;
+    animation-name: Parrafos;
     animation-duration: 2s;
-}
-@keyframes Parrafo {
-    0%{opacity: 0%;}
-    25%{opacity: 25%;}
-    50%{opacity: 50%;}
-    75%{opacity: 75%;}
-    100%{opacity: 100%;}
 }
 .DescargaCv{
     grid-area: DescargaCv;
@@ -247,14 +206,14 @@ h1{
 .DescargaCv a{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 2.5rem;
-    color: rgb(255, 255, 255);
-    box-shadow: 2px 1px 3px gray;
+    color: #ffffff;
+    box-shadow: 2px 1px 3px #808080;
     transition: 1s;
     text-decoration: none;
-    background-color: rgb(17, 40, 72);
+    background-color: #112848;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    text-shadow: 2px 2px 2px gray;
+    text-shadow: 2px 2px 2px #808080;
 }
 .DescargaCv a:hover{
     transform: scale(1.1);
@@ -270,44 +229,28 @@ h1{
     display: flex;
 }
 .FilaSkillsDerecha{
-    animation-name: LogoR;
+    animation-name: FilaDer;
     animation-duration: 2s;
-}
-@keyframes LogoR {
-    0%{opacity: 0%;transform: translate(100px, 0px);}
-    25%{opacity: 25%;}
-    50%{opacity: 50%;}
-    75%{opacity: 75%;}
-    100%{opacity: 100%;}
 }
 .FilaSkillsIzquierda{
-    animation-name: fila;
+    animation-name: FilaIzq;
     animation-duration: 2s;
-}
-@keyframes fila{
-    0%{opacity: 0%;transform: translate(-100px, 0px);}
-    25%{opacity: 25%;}
-    50%{opacity: 50%;transform: scale(1.2);}
-    75%{opacity: 75%;}
-    100%{opacity: 100%;}
 }
 .FilaIzquierdaImagen img, .FilaDerechaImagen img{
     height: 10rem;
+    filter: drop-shadow(5px 5px 2px #808080);
 }
 .FilaIzquierdaImagen,.FilaDerechaImagen {
     width: 50%;
     text-align: right;
     padding-right: 6rem;
 }
-h3{
+.FilaDerehaTexto,.FilaIzquierdaTexto {
     font-family: 'Audiowide', cursive;
     font-size: 2rem;
     color: #000;
     padding-bottom: 10px;
-}
-.FilaDerehaTexto,.FilaIzquierdaTexto {
-    font-family: 'Audiowide', cursive;
-    font-size: 2rem;
+    text-shadow: 1px 1px 1px #808080;
 }
 
 /* MAIN PORTFOLIO */
@@ -316,20 +259,13 @@ h3{
     animation-name: Portfolio;
     animation-duration: 2s;
 }
-@keyframes Portfolio {
-    0%{opacity: 0%;transform: translate(0px, 100px);}
-    25%{opacity: 25%;}
-    50%{opacity: 50%;}
-    75%{opacity: 75%;}
-    100%{opacity: 100%;}
-}
 .BoxFilaPortfolio a{
     text-decoration: none;
 }
 .BoxFilaPortfolio{
     margin: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    box-shadow: 10px 10px 10px #00000033;
 }
 .BoxFilaPortfolio:hover{
     transform: scale(1.01);
@@ -340,8 +276,9 @@ h3{
     font-size: 2rem;
     padding: 20px;
     margin-top: 0;
-    color: rgb(0, 0, 0);
-    background-color: rgba(22, 159, 228, 0.555);
+    color: #000000;
+    background-color: #169fe48e;
+    text-shadow: 1px 1px 1px #808080;
 }
 .BoxFilaPortfolio img{
     width: 100%;
@@ -366,13 +303,13 @@ h3{
 .ENVIAR input{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 2.5rem;
-    color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 1px gray;
+    color: #ffffff;
+    box-shadow: 1px 1px 1px #808080;
     transition: 1s;
-    background-color: rgb(17, 40, 72);
+    background-color: #112848;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    text-shadow: 2px 2px 2px gray;
+    text-shadow: 2px 2px 2px #808080;
     margin: 20px 0;
 }
 .ENVIAR input:hover{
@@ -413,7 +350,7 @@ label textarea{
     padding: 0;
 }
 label span{
-    color: silver;
+    color: #808080;
     font-family: 'Chakra Petch', sans-serif;
     position: absolute;
     top: 8px;
@@ -422,27 +359,28 @@ label span{
 }
 /* ESTADO FOCUS */
 label.focus{
-    border-color: rgba(22, 159, 228, 0.555);
+    border-color: #169fe48e;
 }
 label span.focus{
-    color: rgba(22, 159, 228, 0.555);
+    color: #169fe48e;
 }
 /* ESTADO TOP */
 label span.top{
     left: 2px;
     top: -10px;
     font-size: 12px;
-    background: rgb(217, 217, 217);
+    background: #d9d9d9;
     padding: 0 10px;
 }
 
 /* FOOTER */
 footer{
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+    background-color: #ffffff;
+    margin-top: auto;
 }
 .RrssFooter{
     width: 100%;
@@ -452,7 +390,7 @@ footer{
 
 }
 .RrssFooter a svg{
-    color: rgb(17, 40, 72);
+    color: #112848;
     height: 3rem;
     margin: 10px 10px;
 }
@@ -462,12 +400,12 @@ footer{
     margin-right: 10px;
 }
 .Copyright svg{
-    color: rgb(17, 40, 72);
+    color: #112848;
     height: 3rem;
 }
 .Copyright p{
     font-family: 'Chakra Petch', sans-serif;
-    color: rgb(17, 40, 72);
+    color: #112848;
     text-align: center;
     margin-right: 10px;
 }
@@ -475,4 +413,102 @@ footer{
     transition: 1s;
     transform: scale(1.1);
 }
-@media ()
+/* TABLET */
+@media (max-width: 768px) {
+    /* HEADER */
+    .Logo{
+        width: 15%;
+    }
+    main{
+        height: 100%;
+    }
+    /* MAIN INDEX */
+    .LogoL img, .LogoR img{
+        width: 30%;
+    }
+    .LogoL p, .LogoR p{
+        font-size: 6rem;
+    }
+    .DesWeb p{
+        font-size: 4rem;
+    }
+    /* MAIN SOBRE MI */
+    .ImagenPersonaCafe{
+        height: 100%;
+        width: 80%;
+    }
+    .Parrafo{
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+    /* MAIN PORTFOLIO */
+    .BoxFilaPortfolio p{
+        font-size: 1.7rem;
+    }
+
+    }
+
+/* @media(max-width: 576px) {
+    .MainIndex{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "ImagenPersonaPc ImagenPersonaPc"
+        "ImagenPersonaPc ImagenPersonaPc"
+        "LogoL LogoL"
+        "LogoR LogoR"
+        ;
+    }
+} */
+
+/* ANIMACIONES */
+@keyframes Portfolio {
+    0%{opacity: 0%;transform: translate(0px, 100px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+@keyframes FilaDer {
+    0%{opacity: 0%;transform: translate(100px, 0px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;transform: scale(1.2);}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+@keyframes FilaIzq{
+    0%{opacity: 0%;transform: translate(-100px, 0px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;transform: scale(1.2);}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+@keyframes Logos {
+    0%{opacity: 0%;transform: translate(100px, 0px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+@keyframes Titulos {
+    0%{opacity: 0%;}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+@keyframes Imagenes {
+    0%{opacity: 0%;transform: translate(0px, 100px);}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+@keyframes Parrafos{
+    0%{opacity: 0%;}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
