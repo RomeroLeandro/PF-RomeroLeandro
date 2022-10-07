@@ -1,6 +1,6 @@
-@mixin reset ($Margin, $Padding, $Box){
+@mixin Reset ($Margin, $Padding, $Box){
     margin: $Margin;
-    padding: $Margin;
+    padding: $Padding;
     box-sizing: $Box;
 }
 
@@ -30,4 +30,9 @@
     font-family: $Family;
     font-size: $Size;
     color: $Color;
+}
+@mixin Posicion($Position, $Top, $Index) {
+    position: $Position;
+    top: $Top;
+    z-index: $Index;
 }
