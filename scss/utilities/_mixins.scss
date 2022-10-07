@@ -1,10 +1,10 @@
-@mixin reset {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@mixin reset ($Margin, $Padding, $Box){
+    margin: $Margin;
+    padding: $Margin;
+    box-sizing: $Box;
 }
 
-@mixin PropiedadesFlex ($Direction, $Jusify, $aling) {
+@mixin PropiedadesFlex ($Direction, $Jusify, $aling){
     display: flex;
     flex-direction: $Direction;
     justify-content: $Jusify;
