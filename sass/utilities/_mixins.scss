@@ -4,9 +4,30 @@
     box-sizing: border-box;
 }
 
-@mixin PropiedadesFlex ($Direction, $Jusify, $alling) {
+@mixin PropiedadesFlex ($Direction, $Jusify, $aling) {
     display: flex;
     flex-direction: $Direction;
     justify-content: $Jusify;
-    align-items: $alling;
+    align-items: $aling;
+}
+
+@mixin PropiedadesGrids ($Column, $Row, $Justify, $Aling) {
+    display: grid;
+    grid-template-columns: $Column;
+    grid-template-rows: $Row;
+    justify-content: $Justify;
+    align-items: $Aling;
+}
+
+@mixin Medidas ($Width, $Heigth, $Margin, $Padding) {
+    width: $Width;
+    height: $Heigth;
+    margin: $Margin;
+    padding: $Padding;
+}
+
+@mixin Fuentes ($Family, $Size, $Color) {
+    font-family: $Family;
+    font-size: $Size;
+    color: $Color;
 }
