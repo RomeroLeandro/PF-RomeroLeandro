@@ -1,11 +1,11 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html{
     font-size: 62.5%;
-}
+} */
 h2{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 5rem;
@@ -18,33 +18,33 @@ h2{
     animation-name: Titulos;
     animation-duration: 2s;
 }
-body{
+/* body{
     background-color: #d9d9d9;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+} */
 
 /* HEADER */
-header{
+/* header{
     position: sticky;
-    top: 0;
-    display: flex;
-    width: 100%;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    box-shadow: 10px 0 15px #00000033;
-    z-index: 1;
+    top: 0; */
+    /* display: flex;
+    width: 100%; */
+    /* padding: 5px; */
+    /* background-color: rgb(255, 255, 255);
+    align-items: center; */
+    /* box-shadow: 10px 0 15px #00000033; */
+    /* z-index: 1; */
 }
 .Logo{
-    width: 8%;
-    transition: 1s;
+    /* width: 8%; */
+    /* transition: 1s;
     filter: drop-shadow(5px 5px 2px #808080);
 }
 .Logo:hover{
     transform:rotate(-10deg);
-}
+} */
 .navbar-collapse{
     text-align: center;
 }

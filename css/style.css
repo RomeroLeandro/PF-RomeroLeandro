@@ -6,3 +6,30 @@
 
 html {
   font-size: 62.5%; }
+
+main {
+  background-color: #d9d9d9;
+  min-height: 100vh; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 10px 0 15px #00000033; }
+
+.Logo {
+  width: 10%;
+  height: 10%;
+  margin: 10px;
+  padding: 0;
+  filter: drop-shadow(5px 5px 2px #808080);
+  transition: 1s; }
+
+.Logo:hover {
+  transform: rotate(-5deg); }

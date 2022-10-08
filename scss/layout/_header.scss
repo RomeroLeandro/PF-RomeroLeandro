@@ -1,0 +1,15 @@
+header{
+    @include Posicion(sticky, 0, 1);
+    @include PropiedadesFlex(row, center, center);
+    width: 100%;
+    background-color: $BackgroundSecundario;
+    box-shadow: 10px 0 15px #00000033;
+}
+.Logo{
+    @include Medidas(10%, 10%, 10px, 0);
+    filter: drop-shadow(5px 5px 2px #808080);
+    transition: 1s;
+}
+.Logo:hover{
+    transform: rotate(-5deg);
+}
