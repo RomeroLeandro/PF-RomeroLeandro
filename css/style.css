@@ -7,10 +7,6 @@
 html {
   font-size: 62.5%; }
 
-main {
-  background-color: #d9d9d9;
-  min-height: 100vh; }
-
 header {
   position: sticky;
   top: 0;
@@ -33,3 +29,57 @@ header {
 
 .Logo:hover {
   transform: rotate(-5deg); }
+
+main {
+  background-color: #d9d9d9;
+  min-height: 100vh; }
+
+.MainIndex {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: none;
+  align-items: none;
+  grid-template-areas: "ImagenPersonaPc ImagenPersonaPc LogoL LogoL LogoL" "ImagenPersonaPc ImagenPersonaPc LogoR LogoR LogoR" "ImagenPersonaPc ImagenPersonaPc DesWeb DesWeb DesWeb";
+  filter: drop-shadow(5px 5px 2px #808080); }
+
+.ImagenPersonaPc {
+  grid-area: ImagenPersonaPc; }
+
+.LogoL, .LogoR {
+  grid-area: LogoL;
+  display: flex;
+  flex-direction: none;
+  justify-content: start;
+  align-items: baseline;
+  margin-top: 40px; }
+  .LogoL img, .LogoR img {
+    filter: drop-shadow(5px 5px 2px #626262);
+    width: 25%; }
+  .LogoL p, .LogoR p {
+    font-family: "Audiowide", cursive;
+    font-size: 8rem;
+    color: #169fe4; }
+
+.LogoR {
+  grid-area: LogoR;
+  justify-content: end; }
+  .LogoR p {
+    color: #112848; }
+
+.DesWeb {
+  grid-area: DesWeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center; }
+  .DesWeb a {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 2px 2px 3px gray;
+    background-color: #112848;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-shadow: 2px 2px 2px #808080; }

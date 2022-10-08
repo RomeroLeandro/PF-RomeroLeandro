@@ -75,76 +75,76 @@ h2{
 
 /* MAIN INDEX */
 .MainIndex{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas:
+    grid-template-rows: repeat(3,1fr); */
+    /* grid-template-areas:
     "ImagenPersonaPc ImagenPersonaPc LogoL LogoL LogoL"
     "ImagenPersonaPc ImagenPersonaPc LogoR LogoR LogoR"
     "ImagenPersonaPc ImagenPersonaPc DesWeb DesWeb DesWeb"
-    ;
+    ; */
 }
 .ImagenPersonaPc{
-    grid-area: ImagenPersonaPc;
+    /* grid-area: ImagenPersonaPc;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
     filter: drop-shadow(5px 5px 2px #808080);
     animation-name: Imagenes;
     animation-duration: 2s;
 }
 .LogoL{
-    grid-area: LogoL;
+    /* grid-area: LogoL;
     display: flex;
     justify-content: start;
-    align-items: baseline;
-    margin-top: 40px;
+    align-items: baseline; */
+    /* margin-top: 40px; */
     animation-name: Logos;
     animation-duration: 2s;
 }
 .LogoL img{
-    filter: drop-shadow(5px 5px 2px #626262);
+    /* filter: drop-shadow(5px 5px 2px #626262);
     width: 25%;
-}
+} */
 .LogoR{
-    grid-area: LogoR;
+    /* grid-area: LogoR;
     display: flex;
     justify-content: end;
-    align-items: baseline;
+    align-items: baseline; */
     margin-right: 40px;
     animation-name: Logos;
     animation-duration: 2s;
 }
 .LogoR img{
-    filter: drop-shadow(5px 5px 2px #112848);
+    /* filter: drop-shadow(5px 5px 2px #112848);
     width: 25%;
-}
+} */
 .LogoL p{
-    font-family: 'Audiowide', cursive;
+    /* font-family: 'Audiowide', cursive;
     font-size: 8rem;
     color: #16A1E4;
     filter: drop-shadow(5px 5px 2px #112848);
-}
+} */
 .LogoR p{
-    font-family: 'Audiowide', cursive;
+    /* font-family: 'Audiowide', cursive;
     font-size: 8rem;
     color: #112848;
     filter: drop-shadow(5px 5px 2px #626262);
-}
+} */
 .DesWeb{
-    grid-area: DesWeb;
+    /* grid-area: DesWeb;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 .DesWeb a{
-    font-family: 'Chakra Petch', sans-serif;
+    /* font-family: 'Chakra Petch', sans-serif;
     font-size: 2.5rem;
     color: #ffffff;
     box-shadow: 2px 2px 3px gray;
     transition: 1s;
     text-decoration: none;
     background-color: #112848;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; */
     border-radius: 1rem;
     text-shadow: 2px 2px 2px #808080;
 }

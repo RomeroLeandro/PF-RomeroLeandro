@@ -5,14 +5,10 @@
 html{
     font-size: 62.5%
 }
-main{
-    background-color: $BackgroundPrincipal;
-    min-height: 100vh;
-}
 @import "./layout/header";
+@import "./layout/mainIndex";
 @import "./components/bootstrap";
 @import "./components/button";
-@import "./layout/mainIndex";
 @import "./layout/mainSobreMi";
 @import "./layout/mainSkills";
 @import "./layout/mainPortfolio";

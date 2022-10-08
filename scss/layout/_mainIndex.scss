@@ -1,0 +1,49 @@
+main{
+    background-color: $BackgroundPrincipal;
+    min-height: 100vh;
+}
+.MainIndex{
+    @include PropiedadesGrids(repeat(5,1fr),repeat(3,1fr),none,none);
+    grid-template-areas: 
+    "ImagenPersonaPc ImagenPersonaPc LogoL LogoL LogoL"
+    "ImagenPersonaPc ImagenPersonaPc LogoR LogoR LogoR"
+    "ImagenPersonaPc ImagenPersonaPc DesWeb DesWeb DesWeb";
+    filter: drop-shadow(5px 5px 2px #808080);
+}
+.ImagenPersonaPc{
+    grid-area: ImagenPersonaPc;
+    // @include PropiedadesFlex(none, none,center);
+}
+.LogoL{
+    grid-area: LogoL;
+    @include PropiedadesFlex(none, start, baseline);
+    margin-top: 40px;
+    img{
+        filter: drop-shadow(5px 5px 2px #626262);
+        width: 25%;
+    }
+    p{
+        @include Fuentes($FuenteSecundaria, 8rem, $ColorPrimario)
+    }
+}
+.LogoR{
+    grid-area: LogoR;
+    @extend .LogoL;
+    justify-content: end;
+    p{
+        color: $ColorSecundario;
+    }
+}
+.DesWeb{
+    grid-area: DesWeb;
+    @include PropiedadesFlex(column, top, center);
+    a{
+        @include Fuentes($FuentePrincipal, 2.5rem, #fff);
+        text-decoration: none;
+        box-shadow: 2px 2px 3px gray;
+        background-color: $ColorSecundario;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        text-shadow: 2px 2px 2px #808080;
+    }
+}
