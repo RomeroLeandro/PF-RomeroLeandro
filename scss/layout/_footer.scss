@@ -1,0 +1,35 @@
+footer{
+    @include PropiedadesFlex(row, space-evenly, center);
+    background-color: $BackgroundSecundario;
+    margin-top: auto;
+}
+.RrssFooter{
+    width: 100%;
+    @include PropiedadesFlex(start, start, center);
+    margin-left: 20px;
+    a:hover{
+        transform: scale(1.1);
+        transition: $Time;
+    }
+    a{
+        margin: 5px 20px;
+        svg{
+            color: $ColorSecundario;
+            height: 3rem;
+        }a:hover{
+        transform: scale(1.1);
+        transition: $Time;
+    }
+    }
+}
+.Copyright{
+    @include PropiedadesFlex(row, end, center);
+    margin-right: 10px;
+    svg{
+        color: $ColorSecundario;
+    }
+    p{
+        @include Fuentes($FuentePrincipal, 1rem, $ColorSecundario);
+        text-align: center;
+    }
+}
