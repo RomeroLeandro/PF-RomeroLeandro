@@ -160,22 +160,22 @@ h2{
 
 /* MAIN SOBRE MI */
 .SobreMi{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-template-areas: 
     "ImagenPersonaCafe ImagenPersonaCafe h1 h1 h1"
     "ImagenPersonaCafe ImagenPersonaCafe Parrafo Parrafo Parrafo"
     "ImagenPersonaCafe ImagenPersonaCafe DescargaCv DescargaCv DescargaCv"
-    ;
+    ; */
 }
 .ImagenPersonaCafe{
-    grid-area: ImagenPersonaCafe;
+    /* grid-area: ImagenPersonaCafe;
     display:flex;
-    justify-content: center;
-    filter: drop-shadow(5px 5px 2px #808080);
+    justify-content: center; */
+    /* filter: drop-shadow(5px 5px 2px #808080);
     animation-name: Imagenes;
-    animation-duration: 2s;
+    animation-duration: 2s; */
 }
 h1{
     grid-area: h1;
@@ -249,7 +249,7 @@ h1{
     text-align: right;
     padding-right: 6rem;
 }
-.FilaDerehaTexto,.FilaIzquierdaTexto {
+.FilaDerechaTexto,.FilaIzquierdaTexto {
     font-family: 'Audiowide', cursive;
     font-size: 2rem;
     color: #000;

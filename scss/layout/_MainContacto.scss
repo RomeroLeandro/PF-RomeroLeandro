@@ -1,0 +1,73 @@
+.Formulario{
+    @include PropiedadesFlex(none, center,none);
+    padding-top: 15px;
+}
+.FilasContacto{
+    @include PropiedadesFlex(row,center,none);
+}
+.ParrafoContacto{
+    @extend .Parrafo;
+    @include PropiedadesFlex(none, center,center);
+    margin-bottom: 20px;
+}
+
+// ESTADO DE REPOSO
+
+label{
+    display: block;
+    width: 200px;
+    border: 2px solid silver;
+    padding: 8px 10px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: .25s;
+    margin: 5px 20px;
+}
+#LabelComentario{
+    width: 440px;
+}
+label input{
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font: 16px/16px;
+    font-family: $FuentePrincipal;
+    padding: 0;
+}
+label textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font: 16px/16px;
+    padding: 0;
+}
+label span{
+    color: #808080;
+    font-family: $FuentePrincipal;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition: .25s;
+}
+
+// ESTADO FOCUS
+label.focus{
+    border-color: #169fe48e;
+}
+label span.focus{
+    color: #169fe48e;
+}
+
+// ESTADO TOP
+label span.top{
+    left: 2px;
+    top: -10px;
+    font-size: 12px;
+    background: #d9d9d9;
+    padding: 0 10px;
+}
