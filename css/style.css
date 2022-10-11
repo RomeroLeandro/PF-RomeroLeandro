@@ -123,7 +123,7 @@ h2 {
   flex-direction: none;
   justify-content: flex-start;
   align-items: flex-end;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-shadow: 2px 2px 2px #808080;
   animation-name: Titulos;
   animation-duration: 2s; }
@@ -176,6 +176,32 @@ h2 {
   color: #000000;
   text-shadow: 2px 2px 2px #808080; }
 
-.Skills {
+.Titulos {
   justify-content: center;
-  padding: 50px 0; }
+  padding-top: 50px; }
+
+.FilaPortfolio {
+  display: flex;
+  animation-name: Portfolio;
+  animation-duration: 2s; }
+
+.BoxFilaPortfolio {
+  margin: 30px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px #00000033; }
+  .BoxFilaPortfolio p {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    margin-top: 0;
+    padding: 20px;
+    background-color: #169fe48e;
+    text-shadow: 2px 2px 2px #808080;
+    text-align: center; }
+  .BoxFilaPortfolio img {
+    width: 100%; }
+  .BoxFilaPortfolio a {
+    text-decoration: none; }
+
+.BoxFilaPortfolio:hover {
+  transform: scale(1.01); }

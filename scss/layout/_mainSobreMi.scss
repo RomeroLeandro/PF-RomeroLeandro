@@ -13,7 +13,7 @@ h2{
     grid-area: h2;
     @include Fuentes($FuentePrincipal, 6rem, $ColorPrimario);
     @include PropiedadesFlex(none, flex-start, flex-end);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @include SombraTexto;
     @include Animation(Titulos, $Time);
 }

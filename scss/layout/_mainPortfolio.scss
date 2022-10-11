@@ -1,0 +1,26 @@
+.FilaPortfolio{
+    display: flex;
+    @include Animation(Portfolio, $Time);
+}
+.BoxFilaPortfolio{
+    margin: 30px;
+    background-color: $ColorBlanco;
+    box-shadow: 10px 10px 10px #00000033;
+    p{
+        @include Fuentes($FuentePrincipal, 2rem, $ColorNegro);
+        margin-top: 0;
+        padding: 20px;
+        background-color: #169fe48e;
+        @include SombraTexto;
+        text-align: center;
+        }
+    img{
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.BoxFilaPortfolio:hover{
+    transform: scale(1.01);
+}

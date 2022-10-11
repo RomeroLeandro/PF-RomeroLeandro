@@ -25,7 +25,7 @@
     @include Fuentes($FuenteSecundaria, 2rem, $ColorNegro);
     @include SombraTexto;
 }
-.Skills{
+.Titulos{
     justify-content: center;
-    padding: 50px 0;
+    padding-top: 50px;
 }
