@@ -11,7 +11,7 @@
 }
 h2{
     grid-area: h2;
-    @include Fuentes($FuentePrincipal, 5rem, $ColorPrimario);
+    @include Fuentes($FuentePrincipal, 6rem, $ColorPrimario);
     @include PropiedadesFlex(none, flex-start, flex-end);
     margin-bottom: 50px;
     @include SombraTexto;

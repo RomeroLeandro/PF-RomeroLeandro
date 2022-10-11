@@ -1,0 +1,31 @@
+.FilaSkills{
+    display: flex;
+    padding-bottom: 6rem;
+}
+.FilaSkillsIzquierda, .FilaSkillsDerecha{
+    width: 50%;
+    display: flex;
+}
+.FilaSkillsDerecha{
+    @include Animation(FilaDer, $Time);
+}
+.FilaSkillsIzquierda{
+    @include Animation(FilaIzq, $Time);
+}
+.FilaIzquierdaImagen, .FilaDerechaImagen{
+    width: 50%;
+    padding-right: 4rem;
+    text-align: right;
+    img{
+        height: 10rem;
+        @include SombraClara;
+    }
+}
+.FilaDerechaTexto, .FilaIzquierdaTexto{
+    @include Fuentes($FuenteSecundaria, 2rem, $ColorNegro);
+    @include SombraTexto;
+}
+.Skills{
+    justify-content: center;
+    padding: 50px 0;
+}

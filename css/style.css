@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:ital,wght@1,600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -117,7 +117,7 @@ header {
 h2 {
   grid-area: h2;
   font-family: "Chakra Petch", sans-serif;
-  font-size: 5rem;
+  font-size: 6rem;
   color: #169fe4;
   display: flex;
   flex-direction: none;
@@ -145,3 +145,37 @@ h2 {
   flex-direction: none;
   justify-content: top;
   align-items: center; }
+
+.FilaSkills {
+  display: flex;
+  padding-bottom: 6rem; }
+
+.FilaSkillsIzquierda, .FilaSkillsDerecha {
+  width: 50%;
+  display: flex; }
+
+.FilaSkillsDerecha {
+  animation-name: FilaDer;
+  animation-duration: 2s; }
+
+.FilaSkillsIzquierda {
+  animation-name: FilaIzq;
+  animation-duration: 2s; }
+
+.FilaIzquierdaImagen, .FilaDerechaImagen {
+  width: 50%;
+  padding-right: 4rem;
+  text-align: right; }
+  .FilaIzquierdaImagen img, .FilaDerechaImagen img {
+    height: 10rem;
+    filter: drop-shadow(5px 5px 2px #808080); }
+
+.FilaDerechaTexto, .FilaIzquierdaTexto {
+  font-family: "Audiowide", cursive;
+  font-size: 2rem;
+  color: #000000;
+  text-shadow: 2px 2px 2px #808080; }
+
+.Skills {
+  justify-content: center;
+  padding: 50px 0; }
