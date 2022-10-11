@@ -1,0 +1,31 @@
+.SobreMi{
+    @include PropiedadesGrids(repeat(5,1fr), repeat(3,1fr));
+    grid-template-areas: 
+    "ImagenPersonaCafe ImagenPersonaCafe h2 h2 h2"
+    "ImagenPersonaCafe ImagenPersonaCafe Parrafo Parrafo Parrafo"
+    "ImagenPersonaCafe ImagenPersonaCafe DescargaCv DescargaCv DescargaCv";
+}
+.ImagenPersonaCafe{
+    @extend .ImagenPersonaPc;
+    grid-area: ImagenPersonaCafe;
+}
+h2{
+    grid-area: h2;
+    @include Fuentes($FuentePrincipal, 5rem, $ColorPrimario);
+    @include PropiedadesFlex(none, flex-start, flex-end);
+    margin-bottom: 50px;
+    @include SombraTexto;
+    @include Animation(Titulos, $Time);
+}
+.Parrafo{
+    grid-area: Parrafo;
+    @include Fuentes($FuenteSecundaria, 2rem, $ColorNegro);
+    text-align: left;
+    margin-right: 10px;
+    @include SombraTexto;
+    @include Animation(Parrafo, $Time);
+}
+.DescargaCv{
+    grid-area: DescargaCv;
+    @include PropiedadesFlex(none, top, center);
+}

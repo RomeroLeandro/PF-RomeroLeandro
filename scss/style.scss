@@ -2,9 +2,7 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
 @import "./base/reset";
-html{
-    font-size: 62.5%
-}
+@import "./layout/main";
 @import "./layout/header";
 @import "./layout/mainIndex";
 @import "./components/bootstrap";

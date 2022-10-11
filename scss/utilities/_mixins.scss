@@ -11,12 +11,10 @@
     align-items: $aling;
 }
 
-@mixin PropiedadesGrids ($Column, $Row, $Justify, $Aling) {
+@mixin PropiedadesGrids ($Column, $Row) {
     display: grid;
     grid-template-columns: $Column;
     grid-template-rows: $Row;
-    justify-content: $Justify;
-    align-items: $Aling;
 }
 
 @mixin Medidas ($Width, $Heigth, $Margin, $Padding) {

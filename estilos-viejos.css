@@ -145,18 +145,18 @@ h2{
     text-decoration: none;
     background-color: #112848;
     padding: 1rem 2rem; */
-    border-radius: 1rem;
-    text-shadow: 2px 2px 2px #808080;
+    /* border-radius: 1rem; */
+    /* text-shadow: 2px 2px 2px #808080; */
 }
 .DesWeb a:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 .DesWeb p{
-    font-family: 'Chakra Petch', sans-serif;
+    /* font-family: 'Chakra Petch', sans-serif;
     font-size: 5rem;
     margin: 20px;
     text-shadow: 2px 2px 2px #808080;
-}
+} */
 
 /* MAIN SOBRE MI */
 .SobreMi{

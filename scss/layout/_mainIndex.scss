@@ -1,9 +1,5 @@
-main{
-    background-color: $BackgroundPrincipal;
-    min-height: 100vh;
-}
 .MainIndex{
-    @include PropiedadesGrids(repeat(5,1fr),repeat(3,1fr),none,none);
+    @include PropiedadesGrids(repeat(5,1fr),repeat(3,1fr));
     grid-template-areas: 
     "ImagenPersonaPc ImagenPersonaPc LogoL LogoL LogoL"
     "ImagenPersonaPc ImagenPersonaPc LogoR LogoR LogoR"
@@ -12,7 +8,7 @@ main{
 }
 .ImagenPersonaPc{
     grid-area: ImagenPersonaPc;
-    @include PropiedadesFlex(center, center, none);
+    @include PropiedadesFlex(none, center, none);
     @include SombraClara;
     @include Animation(Imagenes,$Time);
 }
@@ -45,8 +41,8 @@ main{
     grid-area: DesWeb;
     @include PropiedadesFlex(column, top, center);
     h1{
-        @include Fuentes($FuentePrincipal, 5rem, #000000);
+        @include Fuentes($FuentePrincipal, 5rem, $ColorNegro);
         @include SombraTexto;
         margin-bottom: 40px;
-    }
+    }   
 }

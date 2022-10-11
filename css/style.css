@@ -7,6 +7,10 @@
 html {
   font-size: 62.5%; }
 
+main {
+  background-color: #d9d9d9;
+  min-height: 100vh; }
+
 header {
   position: sticky;
   top: 0;
@@ -30,23 +34,17 @@ header {
 .Logo:hover {
   transform: rotate(-5deg); }
 
-main {
-  background-color: #d9d9d9;
-  min-height: 100vh; }
-
 .MainIndex {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  justify-content: none;
-  align-items: none;
   grid-template-areas: "ImagenPersonaPc ImagenPersonaPc LogoL LogoL LogoL" "ImagenPersonaPc ImagenPersonaPc LogoR LogoR LogoR" "ImagenPersonaPc ImagenPersonaPc DesWeb DesWeb DesWeb";
   filter: drop-shadow(5px 5px 2px #808080); }
 
-.ImagenPersonaPc {
+.ImagenPersonaPc, .ImagenPersonaCafe {
   grid-area: ImagenPersonaPc;
   display: flex;
-  flex-direction: center;
+  flex-direction: none;
   justify-content: center;
   align-items: none;
   filter: drop-shadow(5px 5px 2px #808080);
@@ -79,20 +77,20 @@ main {
   .LogoR p {
     color: #112848; }
 
-.DesWeb {
+.DesWeb, .DescargaCv {
   grid-area: DesWeb;
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: center; }
-  .DesWeb h1 {
+  .DesWeb h1, .DescargaCv h1 {
     font-family: "Chakra Petch", sans-serif;
     font-size: 5rem;
     color: #000000;
     text-shadow: 2px 2px 2px #808080;
     margin-bottom: 40px; }
 
-.DesWeb a {
+.DesWeb a, .DescargaCv a {
   font-family: "Chakra Petch", sans-serif;
   font-size: 3.5rem;
   color: #fff;
@@ -104,5 +102,46 @@ main {
   text-shadow: 2px 2px 2px #808080;
   transition: 2s; }
 
-.DesWeb a:hover {
+.DesWeb a:hover, .DescargaCv a:hover {
   transform: scale(1.05); }
+
+.SobreMi {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "ImagenPersonaCafe ImagenPersonaCafe h2 h2 h2" "ImagenPersonaCafe ImagenPersonaCafe Parrafo Parrafo Parrafo" "ImagenPersonaCafe ImagenPersonaCafe DescargaCv DescargaCv DescargaCv"; }
+
+.ImagenPersonaCafe {
+  grid-area: ImagenPersonaCafe; }
+
+h2 {
+  grid-area: h2;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 5rem;
+  color: #169fe4;
+  display: flex;
+  flex-direction: none;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 2px #808080;
+  animation-name: Titulos;
+  animation-duration: 2s; }
+
+.Parrafo {
+  grid-area: Parrafo;
+  font-family: "Audiowide", cursive;
+  font-size: 2rem;
+  color: #000000;
+  text-align: left;
+  margin-right: 10px;
+  text-shadow: 2px 2px 2px #808080;
+  animation-name: Parrafo;
+  animation-duration: 2s; }
+
+.DescargaCv {
+  grid-area: DescargaCv;
+  display: flex;
+  flex-direction: none;
+  justify-content: top;
+  align-items: center; }
