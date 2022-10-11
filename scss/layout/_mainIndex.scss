@@ -8,18 +8,21 @@ main{
     "ImagenPersonaPc ImagenPersonaPc LogoL LogoL LogoL"
     "ImagenPersonaPc ImagenPersonaPc LogoR LogoR LogoR"
     "ImagenPersonaPc ImagenPersonaPc DesWeb DesWeb DesWeb";
-    filter: drop-shadow(5px 5px 2px #808080);
+    @include SombraClara;
 }
 .ImagenPersonaPc{
     grid-area: ImagenPersonaPc;
-    // @include PropiedadesFlex(none, none,center);
+    @include PropiedadesFlex(center, center, none);
+    @include SombraClara;
+    @include Animation(Imagenes,$Time);
 }
 .LogoL{
     grid-area: LogoL;
     @include PropiedadesFlex(none, start, baseline);
     margin-top: 40px;
+    @include Animation(Logos, $Time);
     img{
-        filter: drop-shadow(5px 5px 2px #626262);
+        @include SombraOscura;
         width: 25%;
     }
     p{
@@ -30,6 +33,10 @@ main{
     grid-area: LogoR;
     @extend .LogoL;
     justify-content: end;
+    margin: 0 40px;
+    img{
+        @include SombraClara;
+    }
     p{
         color: $ColorSecundario;
     }
@@ -37,13 +44,9 @@ main{
 .DesWeb{
     grid-area: DesWeb;
     @include PropiedadesFlex(column, top, center);
-    a{
-        @include Fuentes($FuentePrincipal, 2.5rem, #fff);
-        text-decoration: none;
-        box-shadow: 2px 2px 3px gray;
-        background-color: $ColorSecundario;
-        padding: 1rem 2rem;
-        border-radius: 1rem;
-        text-shadow: 2px 2px 2px #808080;
+    h1{
+        @include Fuentes($FuentePrincipal, 5rem, #000000);
+        @include SombraTexto;
+        margin-bottom: 40px;
     }
 }

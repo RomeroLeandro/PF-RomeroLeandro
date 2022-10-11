@@ -88,9 +88,9 @@ h2{
     /* grid-area: ImagenPersonaPc;
     display: flex;
     justify-content: center; */
-    filter: drop-shadow(5px 5px 2px #808080);
-    animation-name: Imagenes;
-    animation-duration: 2s;
+    /* filter: drop-shadow(5px 5px 2px #808080); */
+    /* animation-name: Imagenes;
+    animation-duration: 2s; */
 }
 .LogoL{
     /* grid-area: LogoL;
@@ -98,9 +98,9 @@ h2{
     justify-content: start;
     align-items: baseline; */
     /* margin-top: 40px; */
-    animation-name: Logos;
+    /* animation-name: Logos;
     animation-duration: 2s;
-}
+} */
 .LogoL img{
     /* filter: drop-shadow(5px 5px 2px #626262);
     width: 25%;
@@ -110,10 +110,10 @@ h2{
     display: flex;
     justify-content: end;
     align-items: baseline; */
-    margin-right: 40px;
+    /* margin-right: 40px;
     animation-name: Logos;
     animation-duration: 2s;
-}
+} */
 .LogoR img{
     /* filter: drop-shadow(5px 5px 2px #112848);
     width: 25%;

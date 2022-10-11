@@ -44,7 +44,14 @@ main {
   filter: drop-shadow(5px 5px 2px #808080); }
 
 .ImagenPersonaPc {
-  grid-area: ImagenPersonaPc; }
+  grid-area: ImagenPersonaPc;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: none;
+  filter: drop-shadow(5px 5px 2px #808080);
+  animation-name: Imagenes;
+  animation-duration: 2s; }
 
 .LogoL, .LogoR {
   grid-area: LogoL;
@@ -52,7 +59,9 @@ main {
   flex-direction: none;
   justify-content: start;
   align-items: baseline;
-  margin-top: 40px; }
+  margin-top: 40px;
+  animation-name: Logos;
+  animation-duration: 2s; }
   .LogoL img, .LogoR img {
     filter: drop-shadow(5px 5px 2px #626262);
     width: 25%; }
@@ -63,7 +72,10 @@ main {
 
 .LogoR {
   grid-area: LogoR;
-  justify-content: end; }
+  justify-content: end;
+  margin: 0 40px; }
+  .LogoR img {
+    filter: drop-shadow(5px 5px 2px #808080); }
   .LogoR p {
     color: #112848; }
 
@@ -73,13 +85,24 @@ main {
   flex-direction: column;
   justify-content: top;
   align-items: center; }
-  .DesWeb a {
+  .DesWeb h1 {
     font-family: "Chakra Petch", sans-serif;
-    font-size: 2.5rem;
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 2px 2px 3px gray;
-    background-color: #112848;
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    text-shadow: 2px 2px 2px #808080; }
+    font-size: 5rem;
+    color: #000000;
+    text-shadow: 2px 2px 2px #808080;
+    margin-bottom: 40px; }
+
+.DesWeb a {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 3.5rem;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 2px 1px 3px #808080;
+  background-color: #112848;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  text-shadow: 2px 2px 2px #808080;
+  transition: 2s; }
+
+.DesWeb a:hover {
+  transform: scale(1.05); }

@@ -36,3 +36,23 @@
     top: $Top;
     z-index: $Index;
 }
+
+@mixin SombraTexto {
+    text-shadow: $SombraTexto;
+}
+
+@mixin SombraOscura {
+    filter: drop-shadow($SombraOscura);
+}
+
+@mixin SombraClara {
+    filter: drop-shadow($SombraClara);
+}
+@mixin SombraBox {
+    box-shadow: $SombraBox;
+}
+
+@mixin Animation($Name, $Time) {
+    animation-name: $Name;
+    animation-duration: $Time;
+}
