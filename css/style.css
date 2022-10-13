@@ -90,6 +90,21 @@ header {
     text-shadow: 2px 2px 2px #808080;
     margin-bottom: 40px; }
 
+.BarraNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: none;
+  width: 100%;
+  column-gap: 3rem; }
+  .BarraNav li a {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.6rem;
+    color: #000000; }
+  .BarraNav li:hover {
+    transition: 2s;
+    transform: scale(1.1); }
+
 .DesWeb a, .DescargaCv a {
   font-family: "Chakra Petch", sans-serif;
   font-size: 3.5rem;

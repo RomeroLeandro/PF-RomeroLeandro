@@ -1,0 +1,14 @@
+.BarraNav{
+    @include PropiedadesFlex(row, flex-end,none);
+    width: 100%;
+    column-gap: 3rem;
+    li{
+        a{
+            @include Fuentes($FuentePrincipal, 1.6rem, $ColorNegro);
+        }
+    }
+    li:hover{
+        transition: $Time;
+        transform: scale(1.1);
+    }
+}
