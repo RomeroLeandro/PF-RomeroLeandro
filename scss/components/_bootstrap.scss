@@ -12,3 +12,21 @@
         transform: scale(1.1);
     }
 }
+.Menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-menu{
+    color: #fff;
+    font-size: 20px;
+}
+.navbar-collapse{
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            text-align: right;
+            padding-right: 5px;
+        }
+    }
+}
