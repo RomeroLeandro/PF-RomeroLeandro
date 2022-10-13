@@ -1,0 +1,48 @@
+@include MediaPhone{
+    .MainIndex{
+        display: flex;
+        flex-direction: column;
+    }
+    .ImagenPersonaPc{
+        display: none;
+    }
+    .LogoL{
+        margin-bottom: 30px;
+        img{
+            width: 25%;
+        }
+    }
+    .DesWeb{
+        h1{
+            margin-bottom: 50px;
+        }
+    }
+    .SobreMi{
+        @include PropiedadesFlex(column, none, center);
+        h2{
+            margin-top: 70px;
+        }
+    }
+    .Parrafo{
+        font-size: 1.9rem;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .FilaIzquierdaImagen, .FilaDerechaImagen{
+        img{
+            height: 5rem;
+        }
+    }
+    .FilaDerechaTexto, .FilaIzquierdaTexto{
+        font-size: 1rem;
+    }
+    .FilaPortfolio{
+        justify-content: center;
+    }
+    .BoxFilaPortfolio{
+        margin: 20px 5px;
+        p{
+            font-size: 2rem;
+        }
+    }
+}

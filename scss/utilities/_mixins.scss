@@ -54,3 +54,15 @@
     animation-name: $Name;
     animation-duration: $Time;
 }
+
+@mixin MediaTablet{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin MediaPhone{
+    @media screen and (max-width: 576px){
+        @content;
+    }
+}

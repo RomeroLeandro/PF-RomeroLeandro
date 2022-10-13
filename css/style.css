@@ -351,3 +351,53 @@ footer {
     font-size: 1rem;
     color: #112848;
     text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .ImagenPersonaPc, .ImagenPersonaCafe {
+    padding-top: 40px;
+    height: 100%;
+    width: 80%; }
+  .LogoL img, .LogoR img {
+    width: 30%; }
+  .LogoL p, .LogoR p {
+    font-size: 5.2rem; }
+  .DesWeb h1, .DescargaCv h1 {
+    font-size: 4rem; }
+  .Parrafo, .ParrafoContacto {
+    font-size: 1.6rem; }
+  .BoxFilaPortfolio p {
+    font-size: 1.6rem; } }
+
+@media screen and (max-width: 576px) {
+  .MainIndex {
+    display: flex;
+    flex-direction: column; }
+  .ImagenPersonaPc, .ImagenPersonaCafe {
+    display: none; }
+  .LogoL, .LogoR {
+    margin-bottom: 30px; }
+    .LogoL img, .LogoR img {
+      width: 25%; }
+  .DesWeb h1, .DescargaCv h1 {
+    margin-bottom: 50px; }
+  .SobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center; }
+    .SobreMi h2 {
+      margin-top: 70px; }
+  .Parrafo, .ParrafoContacto {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 70px; }
+  .FilaIzquierdaImagen img, .FilaDerechaImagen img {
+    height: 5rem; }
+  .FilaDerechaTexto, .FilaIzquierdaTexto {
+    font-size: 1rem; }
+  .FilaPortfolio {
+    justify-content: center; }
+  .BoxFilaPortfolio {
+    margin: 20px 5px; }
+    .BoxFilaPortfolio p {
+      font-size: 2rem; } }
